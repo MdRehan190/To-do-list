@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* designing the body */
+body {
+  margin: 0;
+  padding: 0;
+  background: #aa87ee;
+  background-image: url(asset/3.jpg);
+  offset: -15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Righteous", cursive;
+}
+/* designing the container */
+.container {
+  margin-top: 5%;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 5px 10px 10px #0a282c;
+  border-radius: 20%;
+}
+
+/* designing the title */
+#title {
+  color: #000000;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+/* designing the form */
+form {
+  margin: auto;
+  background-color: #ffffff;
+  border: 2px solid #2f2f2f;
+  padding: 10px;
+  width: 50%;
+  height: 10%;
+  text-align: left;
+  border-radius: 20px;
+}
+
+/* designing the button */
+#btn {
+  float: right;
+  background: #e43b3b;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #2a0352;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+i {
+  pointer-events: none;
+}
+
+#btn:hover {
+  text-shadow: 0 0 5px #cee4d5;
+}
+/* designing the input section */
+#input {
+  background: #3c3d3c;
+  border-radius: 12px;
+  text-align: left;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  min-width: 50%;
+  font-size: 1.4rem;
+  color: #f3faf6;
+  transition: all 0.1s ease;
+}
+
+#input:hover {
+  box-shadow: 0 0 5px #d23007;
+}
+/* designing the tasks list */
+#filter {
+  width: 50%;
+  margin: 20px auto;
+  background: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  text-decoration: none;
+  color: #ffffff;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.filter:hover {
+  color: #1f2021;
+  text-decoration: none;
+}
+
+#list {
+  width: 80%;
+  margin: auto;
+  list-style: none;
+}
+/* designing the todo */
+.todo {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #2e2d2d;
+  border-radius: 10px;
+  min-height: 1rem;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.todo span {
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.todo:hover {
+  box-shadow: 0px 0px 5px #797676;
+}
+/* designing the check and trash */
+.check,
+.trash {
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  color: #80a6f2;
+  transition: all 0.3s ease;
+}
+
+.check:hover {
+  color: #053b5f;
+  background-color: #fff;
+  border-radius: 50%;
+  text-shadow: 0px 0px 30px #85a8f9;
+}
+
+.trash:hover {
+  background-color: #fff;
+  color: #ff0000;
+  border-radius: 50%;
+  text-shadow: 0px 0px 30px #fffbfb;
+}
+.completed {
+  text-decoration: line-through;
+  color: #d23007;
+}
+/**********************************************************************/
+@media (min-width: 250px) and (max-width: 465px) {
+  .container {
+    margin-top: 5%;
+    width: 90%;
+    height: 100%;
+  }
+
+  #title {
+    padding: 6px;
+    font-weight: 300;
+  }
+  form {
+    padding: 6px;
+    width: 90%;
+    height: 6%;
+  }
+
+  #btn {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  #input {
+    min-width: 20%;
+    max-width: 65%;
+    font-size: 1rem;
+  }
+
+  #filter {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .filter {
+    font-weight: 700;
+    font-size: 9px;
+  }
+
+  .todo {
+    font-size: 11px;
+    min-height: 1rem;
+    padding: 2px;
+  }
+}
+/***********************************************************/
+@media (min-width: 465px) and (max-width: 765px) {
+  .container {
+    margin-top: 5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 15%;
+  }
+  form {
+    padding: 10px;
+    width: 90%;
+    height: 10%;
+  }
+
+  #btn {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+
+  #filter {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .filter {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #list {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+  }
+
+  .todo {
+    width: 80%;
+    margin: 20px auto;
+    min-height: 1rem;
+    padding: 6px;
+    font-weight: 300;
+  }
+
+  .todo span {
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+
+/*************************************************************/
+@media (min-width: 765px) and (max-width: 965px) {
+  #filter {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .filter {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
